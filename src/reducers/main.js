@@ -8,11 +8,6 @@ import videoList from './videoList.js';
 //  app into a single reducer using the 'combineReducers' method
 //  listed above.
 
-var rootReducer = () => {Redux.combineReducers({
-  currentVideo: currentVideoReducer,
-  videoList: videoListReducer
-})};
-
-
+var rootReducer = combineReducers({currentVideo: currentVideo, videoList: videoList});
 
 export default rootReducer;
