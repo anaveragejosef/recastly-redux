@@ -13,14 +13,11 @@ var handleVideoSearch = (q) => {
   };
 
   return (dispatch) => {
-    // Set the timeout so it is async
-    setTimeout(() => {
-      // Call dispatch on searchYouTube
-      dispatch(searchYouTube(query, (data) => {
-        changeVideoList(data);
-        changeVideo(data[0]);
-      }));
-    }, 2000);
+    // Call dispatch on searchYouTube
+    searchYouTube(query, (data) => {
+      dispatch(changeVideoList(data));
+      dispatch(changeVideo(data[0]));
+    });
   };
 };
 
