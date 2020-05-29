@@ -6,7 +6,7 @@ import changeVideo from './../actions/currentVideo.js';
 // dispatchers with your VideoList component props.
 
 var mapStateToProps = (state) => ({
-  videos: state.videos
+  videos: state.videoList
 })
 
 var mapDispatchToProps = (dispatch) => ({

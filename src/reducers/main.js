@@ -8,6 +8,9 @@ import videoList from './videoList.js';
 //  app into a single reducer using the 'combineReducers' method
 //  listed above.
 
-var rootReducer = combineReducers({currentVideo: currentVideo, videoList: videoList});
+var rootReducer = combineReducers({
+  currentVideo,
+  videoList
+});
 
 export default rootReducer;
